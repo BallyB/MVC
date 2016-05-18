@@ -1,4 +1,5 @@
 package mvc;
+import java.awt.Component;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -11,6 +12,7 @@ public class VueProgressBar implements Observer {
 	public VueProgressBar(){
 		barre = new JProgressBar();
 		barre.setStringPainted(true);
+		barre.setValue(40);	
 	}
 
 	@Override
@@ -20,5 +22,10 @@ public class VueProgressBar implements Observer {
 		barre.setMinimum(((Controleur)o).getMin());
 		barre.setValue((Integer)arg);
 
+	}
+
+	public Component getBarre() {
+		// TODO Auto-generated method stub
+		return this.barre;
 	}
 }

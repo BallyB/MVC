@@ -22,7 +22,8 @@ public class VueAffichage implements Observer {
 	}
 	
 	public JLabel getContenu() { 
-		return jl;}
+		return jl;
+	}
 	
 
 	@Override

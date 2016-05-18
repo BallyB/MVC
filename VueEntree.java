@@ -12,6 +12,7 @@ public class VueEntree extends Observable implements Observer, ActionListener{
 	
 
 	public JTextField champ;
+	
 	public VueEntree(){
 		this.champ = new JTextField();
 		this.champ.setText("40");
