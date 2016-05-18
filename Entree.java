@@ -30,13 +30,10 @@ class Entree {
 		Entree en = new Entree();
 
 		modele.addObserver(controleur.getObsM());
-
 		en.vE.addObserver(controleur.getObsV());
 		
 		controleur.addObserver(en.vE);
-
 		controleur.addObserver(en.vA);
-
 		controleur.addObserver(en.vPB);
 
 

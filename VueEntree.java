@@ -33,8 +33,9 @@ public class VueEntree extends Observable implements Observer, ActionListener{
 	@Override
 	public void update(Observable o, Object arg) {
 		// TODO Auto-generated method stub
-		champ.setText(Integer.toString((Integer)arg));
-
+		if (Integer.parseInt(champ.getText()) != (int)arg){
+			champ.setText(Integer.toString((Integer)arg));
+		}
 	}
 	
 	public void actionPerformed(ActionEvent e) {
